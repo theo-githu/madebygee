@@ -31,6 +31,42 @@ const handleOnMove = e => {
   }
 }
 
+// const track = document.getElementById("image-track");
+
+// let mouseDownAt = 0;
+// let prevPercentage = 0;
+
+// track.addEventListener("mousedown", (e) => {
+//   mouseDownAt = e.clientX;
+//   prevPercentage = parseFloat(track.dataset.percentage) || 0;
+// });
+
+// track.addEventListener("mouseup", () => {
+//   mouseDownAt = 0;
+//   track.dataset.prevPercentage = track.dataset.percentage || 0;
+// });
+
+// track.addEventListener("mousemove", (e) => {
+//   if (mouseDownAt === 0) return;
+
+//   const mouseDelta = mouseDownAt - e.clientX;
+//   const maxDelta = window.innerWidth / 2;
+
+//   const percentage = (mouseDelta / maxDelta) * -100;
+//   const nextPercentageUnconstrained = prevPercentage + percentage;
+//   const nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
+
+//   track.dataset.percentage = nextPercentage;
+
+//   track.style.transform = `translate(${nextPercentage}%, -40%)`;
+
+//   const images = track.getElementsByClassName("image");
+//   for (const image of images) {
+//     image.style.objectPosition = `${100 + nextPercentage}% center`;
+//   }
+// });
+
+
 /* -- Had to add extra lines for touch events -- */
 
 window.onmousedown = e => handleOnDown(e);

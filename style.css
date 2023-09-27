@@ -83,7 +83,9 @@ img {
   top: 50%;
   transform: translate(0%, -40%); 
   width: max-content;
-  user-select: none; /* -- Prevent image highlighting -- */
+  user-select: none; 
+  overflow: hidden; /* Hide overflow on mobile */
+  touch-action: pan-y; /* Enable vertical touch scrolling */
 }
 
 #image-track > .image {
@@ -406,6 +408,15 @@ main {
   height: auto;
   margin-left: auto;
   margin-right: auto;
+}
+
+#image-track > .image {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 100% center;
+  user-select: none;
+  pointer-events: none;
 }
 
 }
