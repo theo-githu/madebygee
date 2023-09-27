@@ -8,6 +8,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: 'Poppins', sans-serif;
   height: 100vh;
@@ -348,8 +349,65 @@ main {
   }
 
   a {
-    font-size: 10px; /* Decrease font size */
+    font-size: 13px; /* Decrease font size */
   }
+
+  .container {
+    max-width: 100%;
+    margin: 0 10px; /* Adjust the margin value as needed */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .content p,
+  .about-text p {
+      font-size: 15px; /* Adjust the font size as needed */
+  }
+
+  .about-text h2 {
+      font-size: 20px; /* Adjust the font size as needed */
+  }
+
+  .contact-about a {
+    font-size: 14px;
+  }
+
+  .contact-container {
+    height: 100vh; /* Makes the container full height of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-content {
+    text-align: center;
+}
+
+.center-content img {
+    max-width: 90%;
+    height: auto;
+}
+
+.center-content a {
+    display: block;
+    font-size: 16px; /* Adjust the font size as needed */
+    margin-top: 20px; /* Add spacing between the image and the email link */
+}
+
+.event-container {
+  height: 100vh; /* Makes the container full height of the viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-container img {
+  max-width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 }
 
 /* iPads and Tablets (481px — 768px) */
