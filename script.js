@@ -83,22 +83,22 @@ window.ontouchmove = e => handleOnMove(e.touches[0]);
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Check if the popup has been closed before
-  if (!localStorage.getItem("popupClosed")) {
-    // Show the popup if it hasn't been closed
-    document.getElementById("popup").style.display = "block";
-  }
+// document.addEventListener("DOMContentLoaded", function () {
+//   // Check if the popup has been closed before
+//   if (!localStorage.getItem("popupClosed")) {
+//     // Show the popup if it hasn't been closed
+//     document.getElementById("popup").style.display = "block";
+//   }
 
-  // Handle click on the close icon
-  document.getElementById("closePopup").addEventListener("click", function () {
-    // Hide the popup
-    document.getElementById("popup").style.display = "none";
+//   // Handle click on the close icon
+//   document.getElementById("closePopup").addEventListener("click", function () {
+//     // Hide the popup
+//     document.getElementById("popup").style.display = "none";
 
-    // Set a flag in localStorage to indicate that the popup has been closed
-    localStorage.setItem("popupClosed", "true");
-  });
-});
+//     // Set a flag in localStorage to indicate that the popup has been closed
+//     localStorage.setItem("popupClosed", "true");
+//   });
+// });
 
 
 
