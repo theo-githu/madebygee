@@ -272,7 +272,7 @@ main {
 
 /* POP UP CONTAINER STYLING */
 
-.popup {
+/* .popup {
   display: none;
   position: fixed;
   top: 0;
@@ -291,15 +291,14 @@ main {
   padding: 20px;
   max-width: 50vw;
   text-align: center;
-  position: relative; /* Required for positioning the close icon */
+  position: relative; 
 }
 
-/* Style for the close icon */
 .close-icon {
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 30px; /* Adjust the size of the close icon */
+  width: 30px; 
   height: 30px;
   cursor: pointer;
 }
@@ -310,29 +309,27 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 2px; /* Width of the cross lines */
-    height: 20px; /* Height of the cross lines */
-    background-color: #333; /* Dark gray color */
-    transform: translate(-50%, -50%) rotate(45deg); /* Rotate to create a cross */
+    width: 2px; 
+    height: 20px; 
+    background-color: #333; 
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .close-icon::after {
-    transform: translate(-50%, -50%) rotate(-45deg); /* Rotate in the opposite direction */
+    transform: translate(-50%, -50%) rotate(-45deg); 
 }
 
-/* Hover effect for the close icon */
 .close-icon:hover::before,
 .close-icon:hover::after {
-    background-color: #999; /* Light gray color on hover */
+    background-color: #999; 
 }
 
 #popup > .image {
   max-width: 300px; 
-  /* max-height: 100%;   */
-  display: flex; /* Center horizontally */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-}
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+} */
 
 /* END OF POP UP CONTAINER STYLING */
 
@@ -419,17 +416,17 @@ main {
   pointer-events: none;
 }
 
-.popup-content {
+/* .popup-content {
   max-width: 70%;
   padding: 10px;
 }
 
-/* Adjust the font size and positioning of the close icon for smaller screens */
+
 .close-icon {
   font-size: 16px;
   top: 5px;
   right: 5px;
-}
+} */
 
 }
 
@@ -449,17 +446,16 @@ main {
     font-size: 14px; /* Decrease font size */
   }
 
-  .popup-content {
+  /* .popup-content {
     max-width: 90%;
     padding: 10px;
   }
 
-  /* Adjust the font size and positioning of the close icon for smaller screens */
   .close-icon {
     font-size: 16px;
     top: 5px;
     right: 5px;
-  }
+  } */
 
 }
 
